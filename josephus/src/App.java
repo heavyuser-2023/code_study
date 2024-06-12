@@ -17,6 +17,7 @@ public class App {
             }
         }
         
+        
         input.strip();
         String splitedInput [] = input.split(" ");
         
