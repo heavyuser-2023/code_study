@@ -17,6 +17,13 @@
             "request": "launch",
             "mainClass": "com.heavyuser.stack.App",
             "cwd": "${workspaceFolder}/stack"
+        },
+        {
+            "type": "java",
+            "name": "running_truck",
+            "request": "launch",
+            "mainClass": "com.heavyuser.running_truck.App",
+            "cwd": "${workspaceFolder}/running_truck"
         }
     ]
 }
