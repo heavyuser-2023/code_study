@@ -1,3 +1,4 @@
+package com.heavyuser.stack;
 public class Stack {
     Node topNode;
     public Stack () {

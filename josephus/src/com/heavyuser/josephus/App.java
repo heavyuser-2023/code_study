@@ -1,3 +1,5 @@
+package com.heavyuser.josephus;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -7,7 +9,7 @@ import java.util.List;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        FileReader fr = new FileReader("src/input.txt");
+        FileReader fr = new FileReader("input.txt");
         String input = "";
         try (BufferedReader br = new BufferedReader(fr)) {
             String line;
@@ -37,7 +39,7 @@ public class App {
             il.remove(index);
         }
 
-        FileWriter fw = new FileWriter("src/output.txt");
+        FileWriter fw = new FileWriter("output.txt");
         try(BufferedWriter bw = new BufferedWriter(fw)) {
             String out = "<" + String.join(",", ol.stream().map(Object::toString).toList()) + ">";
             System.out.println(out);

@@ -1,3 +1,5 @@
+package com.heavyuser.stack;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -12,8 +14,8 @@ public class App {
 
         String currentPath = System.getProperty("user.dir");
         System.out.println(String.format("current path : %s", currentPath));
-        File file = new File(currentPath + "/" + File.separator + "src/input.txt");
-        FileWriter outFileWriter = new FileWriter(currentPath + "/" + File.separator + "src/out.txt");
+        File file = new File("input.txt");
+        FileWriter outFileWriter = new FileWriter("output.txt");
         BufferedWriter writer;
         writer = new BufferedWriter(outFileWriter);
 
